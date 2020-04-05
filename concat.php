@@ -8,13 +8,5 @@ for($i = 1;$i < 100;$i++){
 echo $n;
 // $n = $argv[1];
 // $num = $argv[2];
-
-// echo $n.$num;
-
-
-
-
-
-
 ?>
 
