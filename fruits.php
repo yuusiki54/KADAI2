@@ -1,7 +1,7 @@
 <?php
 if("りんご" === $argv[1]){
     echo "200円";
-}elseif("bバナナ" === $argv[1]){
+}elseif("バナナ" === $argv[1]){
     echo "100円";
 }elseif("みかん" === $argv[1]){
     echo "150円";
