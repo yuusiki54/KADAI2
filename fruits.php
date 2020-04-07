@@ -1,13 +1,13 @@
 <?php
-if("apple" === $argv[1]){
+if("りんご" === $argv[1]){
     echo "200円";
-}elseif("banana" === $argv[1]){
+}elseif("bバナナ" === $argv[1]){
     echo "100円";
-}elseif("orange" === $argv[1]){
+}elseif("みかん" === $argv[1]){
     echo "150円";
-}elseif("grape" === $argv[1]){
+}elseif("ぶどう" === $argv[1]){
     echo "300円";
-}elseif("peach" === $argv[1]){
+}elseif("もも" === $argv[1]){
     echo "400円";
 }
 
