@@ -13,10 +13,10 @@
 $fruits = ["りんご" => 200,"バナナ" => 100,"みかん" => 150,"ぶどう" => 300,"もも"  => 400];
 
 foreach($fruits as $kudamono => $price){
-if($argv[1]==="りんご"){
-echo $kudamono
-}
-}
-           
+    
+    
 
-           
+    }
+
+
+?>
