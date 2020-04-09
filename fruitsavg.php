@@ -11,17 +11,22 @@
 // 実行例） php fruits.php りんご ぶどう もも --> 平均 300円
 
 
-$fruits = ["りんご" => 200,"バナナ" => 100,"みかん" => 150,"ぶどう" => 300,"もも"  => 400];
-$total_price = 0;
-$total_count = 0;
-foreach($fruits as $kudamono => $price){
-    for($i = 1 ;$i < count($argv);$i++){
-    if($argv[$i] == $kudamono){
-        $total_price += $price;
-        $total_count += 1;
+$fruits = ["りんご" => 200, "バナナ" => 100, "みかん" => 150, "ぶどう" => 300, "もも"  => 400];
+$fruits_price = 0;
+for ($i = 1; $i < count($argv); $i++) {
+    if ($argv[$i] == "りんご") {
+    $fruits_price += $fruits["りんご"];
+    }elseif($argv[$i] == "バナナ"){
+        $fruits_price += $fruits["バナナ"];
+    }elseif($argv[$i] == "みかん"){
+        $fruits_price += $fruits["みかん"];
+    }elseif($argv[$i] == "ぶどう"){
+        $fruits_price += $fruits["ぶどう"];
+    }elseif($argv[$i] == "もも"){
+        $fruits_price += $fruits["もも"];
     }
 }
-}
-$fruitsavg = $total_price / $total_count;
-echo $fruitsavg;
+array_shift($argv);
+$average = $fruits_price / count($argv);
+echo $average;
 ?>
