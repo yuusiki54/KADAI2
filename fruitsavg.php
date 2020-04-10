@@ -18,14 +18,11 @@ $fruits_price = 0;
 $fruits_count = 0;
 //$fruits["りんご"]=200
 for ($i = 1; $i < count($argv); $i++) {
-    if(array_key_exists($argv[$i],$fruits)){
-    $fruits_price = $fruits_price + $fruits[$argv[$i]];
-    $fruits_count += 1;
-    }else{
-echo "指定した果物はありません";
+    if (array_key_exists($argv[$i], $fruits)) {
+        $fruits_price = $fruits_price + $fruits[$argv[$i]];
+        $fruits_count += 1;
     }
 }
 
 $average = $fruits_price / $fruits_count;
 echo $average;
-?>
