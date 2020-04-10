@@ -12,11 +12,21 @@
 
 
 $fruits = ["りんご" => 200, "バナナ" => 100, "みかん" => 150, "ぶどう" => 300, "もも"  => 400];
+$fruits_key1 = "りんご";
+$fruits_key2 = "バナナ";
+$fruits_key3 = "みかん";
+$fruits_key4 = "ぶどう";
+$fruits_key5 = "もも";
+
 $fruits_price = 0;
 //$fruits["りんご"]=200
 for ($i = 1; $i < count($argv); $i++) {
-   $fruits_price = $fruits_price + $fruits[$argv[$i]];
-    }
+    if(array_key_exists($fruits_key1,$fruits) and array_key_exists($fruits_key2,$fruits) and array_key_exists($fruits_key3,$fruits)
+        and array_key_exists($fruits_key4,$fruits) and array_key_exists($fruits_key5,$fruits)){
+    $fruits_price = $fruits_price + $fruits[$argv[$i]];
+        }else{
+    echo "その果物は存在しません";
+        }}
 array_shift($argv);
 $average = $fruits_price / count($argv);
 echo $average;
