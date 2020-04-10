@@ -13,19 +13,10 @@
 
 $fruits = ["りんご" => 200, "バナナ" => 100, "みかん" => 150, "ぶどう" => 300, "もも"  => 400];
 $fruits_price = 0;
+//$fruits["りんご"]=200
 for ($i = 1; $i < count($argv); $i++) {
-    if ($argv[$i] == "りんご") {
-    $fruits_price += $fruits["りんご"];
-    }elseif($argv[$i] == "バナナ"){
-        $fruits_price += $fruits["バナナ"];
-    }elseif($argv[$i] == "みかん"){
-        $fruits_price += $fruits["みかん"];
-    }elseif($argv[$i] == "ぶどう"){
-        $fruits_price += $fruits["ぶどう"];
-    }elseif($argv[$i] == "もも"){
-        $fruits_price += $fruits["もも"];
+   $fruits_price = $fruits_price + $fruits[$argv[$i]];
     }
-}
 array_shift($argv);
 $average = $fruits_price / count($argv);
 echo $average;
