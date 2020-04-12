@@ -9,21 +9,21 @@
 
 
 //　　　　　　　　　　↓[＋ , 1 , 2]
-function keisanki($numbers)
+function keisanki($numbers1,$numbers2,$numbers3)
 {
     $kekka = 0;
-    switch ($numbers[0]){
+    switch ($numbers1) {
         case "+":
-            $kekka = $numbers[1] + $numbers[2];
+            $kekka = $numbers2 + $numbers3;
             break;
         case "-":
-            $kekka = $numbers[1] - $numbers[2];
+            $kekka = $numbers2 - $numbers3;
             break;
         case "*":
-            $kekka = $numbers[1] * $numbers[2];
+            $kekka = $numbers2 * $numbers3;
             break;
         case "/":
-            $kekka = $numbers[1] / $numbers[2];
+            $kekka = $numbers2 / $numbers3;
             break;
         default:
             echo "該当しません";
@@ -31,5 +31,5 @@ function keisanki($numbers)
     return $kekka;
 }
 array_shift($argv);
-$answer = keisanki($argv);
+$answer = keisanki($argv[0],$argv[1],$argv[2]);
 echo $answer;
