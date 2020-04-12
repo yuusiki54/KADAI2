@@ -10,7 +10,7 @@
 // 上の課題７のフルーツのリストがあります。価格を入力するとその価格以上のフルーツのリストを出力するプログラム searchfruits.php を作成してください。
 // 実行例） php searchfruits.php 200 -->  りんご、ぶどう、もも
 // 実行例） php searchfruits.php 400 -->  もも
-// 実行例） php searchfruits.php 500 -->   //ないので何も出力しない
+// 実行例） php searchfruits.php 500 -->  //ないので何も出力しない
 
 $fruits = [200 => "りんご", 100 => "バナナ", 150 => "みかん", 300 => "ぶどう", 400 => "もも"];
 function fruitslist($buyfruits)
