@@ -12,16 +12,21 @@
 function keisanki($numbers)
 {
     $kekka = 0;
-    foreach ($numbers as $nums) {
-        if ($nums[0] == "+") {
-            $kekka = $nums[1] + $nums[2];
-        } elseif ($nums[0] == "-") {
-            $kekka = $nums[1] - $nums[2];
-        } elseif ($nums[0] == "*") {
-            $kekka = $nums[1] * $nums[2];
-        } elseif ($nums[0] == "/") {
-            $kekka = $nums[1] / $nums[2];
-        }
+    switch ($numbers[0]){
+        case "+":
+            $kekka = $numbers[1] + $numbers[2];
+            break;
+        case "-":
+            $kekka = $numbers[1] - $numbers[2];
+            break;
+        case "*":
+            $kekka = $numbers[1] * $numbers[2];
+            break;
+        case "/":
+            $kekka = $numbers[1] / $numbers[2];
+            break;
+        default:
+            echo "該当しません";
     }
     return $kekka;
 }
